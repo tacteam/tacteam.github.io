@@ -1,0 +1,12 @@
+node_modules
+
+site/bower_components/
+
+.sass-cache
+
+.settings
+.project
+.target
+
+*~
+
