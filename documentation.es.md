@@ -1,11 +1,20 @@
 # Guia desarrollo aplicaciones TAC
 
+* [Introducción](#introducción)
+* [Uso simplificado de Bower](#uso-simplificado-de-bower)
+* [Servir nuestro sitio](#convertir-la-carpeta-del-proyecto-en-un-sitio-web)  
+  
+* Componentes TAC:
+  * [historial](#historial)
+  * [tac.keys](#tac-keys)
+  * [tac.navigable](#tac-navigable)
+
 ## Introducción
 
 El dispositivo TAC está diseñado para ejecutar aplicaciones HTML5.
 Para facilitar la tarea de desarrollo de aplicaciones, el equipo de tienda TAC utiliza un framework javascript client-side desarrollado por Google llamado AngularJs.
 
-Esta herramienta utiliza jQuery permite separar nuestro sitio en 3 aspectos fundamentales:
+Esta herramienta utiliza jQuery y permite separar nuestro sitio en 3 aspectos fundamentales:
 
 * Vistas: El código html que da forma a cada una de las páginas del sitio.
 * Controladores: programas que "rellenan" las vistas con los datos de nuestro modelo
@@ -13,7 +22,7 @@ Esta herramienta utiliza jQuery permite separar nuestro sitio en 3 aspectos fund
 
 Para mas información [https://angularjs.org](https://angularjs.org/#the-basics)
 
-Para utilizar el framework podemos descargar el código en una carpeta nuestro proyecto y agregar los correspondientes 'imports' en nuestro archivo html general:
+Para utilizar el framework podemos descargar el código en una carpeta en nuestro proyecto y agregar los correspondientes 'imports' en nuestro archivo html general:
 
 ```html
 <script src="/jquery/jquery.js"></script>
@@ -72,11 +81,25 @@ El compontene ngRoute se encarga de virtualizar el redireccionamiento dentro de 
 Sin embargo, algo que no provee es un manejo sobre el hijstorial de navegación.    
 Para solucionar este problema se desarolló el componente 'tac.history' que agrega la funcion de 'volver atras' a las aplicaciones angular, salteando por supuesto aquellas vistas que en realidad no conforman un estado de la aplicación (mensajes de exito o de error, por ejemplo)
 
-documentación: [tac.history](https://github.com/tacteam/history).
+**documentación:** [tac.history](https://github.com/tacteam/history).
 
 ### tac.keys
 
+Si bien cada TAC soportará el uso de diferetes interfaces: Teclado, *mouse* e incluso una aplicacion *mobile*. Estas constituirán extensiones al método común:    
+El control remoto.   
+Las aplicaciones TAC podrán interactuar a travez de  eventos de teclado.   
+Para simplificar la administracion de los eventos, el equipo TAC desarrollo el componente **tac.keys** 
+**tac.keys** administra los eventos de teclado emitidos por el browser, convirtiendolo en acciones sobre todo aquel que se subscriba al servicio proporcionado.
 
+**documentación:** [tac.keys](https://github.com/tacteam/keys).
+
+### tac.navigable
+
+Como comentamos anteriormente, en principio, las aplicaciones deberan ser navegadas utilizando un control remoto.    
+El mismo provee la capacidad de movernos con flechas y ejecutar acciones con botones, por lo que nuestra aplicación, deberá poder ser utilizada con este sistema.    
+El equipo TAC, desarrollo un conjunto de componentes que facilitaran 
+
+**documentación:** [tac.navigable](https://github.com/tacteam/navigable).
 
 
 
