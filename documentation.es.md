@@ -79,7 +79,7 @@ Para simplificar al máximo el desarrollo de aplicaciones, el equipo de desarrol
 
 Un sitio desarrollado con Angular.js conforma en realidad una aplicación web.    
 Esto significa que la aplicación tiene un estado global dentro de nuestra pestaña, que va cambiando y generando la sensacion de 'navegación'.    
-El compontene ngRoute se encarga de virtualizar el redireccionamiento dentro de los sitios Angular.js.    
+El componente ngRoute se encarga de virtualizar el redireccionamiento dentro de los sitios Angular.js.    
 Sin embargo, algo que no provee es un manejo sobre el historial de navegación.    
 Para solucionar este problema se desarolló el componente 'tac.history' que agrega la funcion de 'volver atrás' a las aplicaciones angular, salteando por supuesto aquellas vistas que en realidad no conforman un estado de la aplicación (mensajes de exito o de error, por ejemplo)
 
@@ -120,8 +120,8 @@ Esto significa que el procesamiento de cada acción consume muchos recursos de l
 ### tac.keyboard
 
 Teclado virtual dinámico navegable por control remoto.
-Permite editar los imputs de nuestra pagina con solo agregar un atributo a nuestro html.
-Dispone de teclado qwerty navegable con flechas y T9 con tipeo repetitivo.
+Permite editar los *inputs* de nuestra página con solo agregar un atributo a nuestro html.
+Dispone de teclado qwerty navegable por flechas y otro T9 con tipeo repetitivo sobre el *numpad*.
 
 **documentación:** [tac-keyboard](https://github.com/tacteam/keyboard).
 ([en español](https://github.com/tacteam/keyboard/blob/master/documentation.es.md))
