@@ -1,0 +1,72 @@
+<div class="etiqueta-screen">
+  <div class="etiqueta-viewport"
+    navigable-vertical="categorias" 
+    navigable-scroll-frame="categorias">
+    <div class="etiqueta-container"
+      data-border-color="categoria.color.frame.border"
+      ng-class="categoria.etiqueta.color"
+      ng-repeat="categoria in categorias"
+      navigable-model="categoria"
+      navigable-vertical="categoria"
+      navigable-scroll-from="categorias"
+      >
+      <div class="etiqueta"
+        navigable-horizontal="etiqueta"
+        navigable-priority="0">
+        <a class="etiqueta-name selectable-label"
+          data-text-color="categoria.color.etiqueta.text"
+          data-bg-color="categoria.color.etiqueta.bg"
+          navigable-leaf="etiqueta name {{categoria.etiqueta.name}}"
+          navigable-leaf-active-once="categorias.indexOf(categoria) == 0"
+          navigable-priority="0"
+          ng-click="categoria.collapse = !categoria.collapse"
+          href >
+          <div class="selected-container">
+            <div class="selected" data-bg-color="categoria.color.etiqueta.selected">
+            </div>
+          </div>
+          <div class="selectable-text etiqueta-text">
+            {{categoria.etiqueta.name}}
+            <i ng-if="categoria.productos.length" class="fa fa-caret-square-o-down"></i>
+          </div>
+        </a>
+        <a class="etiqueta-create"
+          ng-click="create_producto(categoria)"
+          navigable-leaf="create_producto en {{categoria.etiqueta.name}}"
+          navigable-priority="1">
+          <i class="fa fa-plus"></i>
+        </a>
+      </div>
+      <div class="productos"
+        ng-class="{collapse: categoria.collapse}"
+        navigable-multiline="productos"
+        navigable-priority="1"
+        navigable-resizable="true"
+        navigable-per-row="4">
+        <a class="producto selectable-label static"
+          navigable-pull-out="categoria.collapse || producto.removed"
+          data-text-color="categoria.color.producto.text"
+          data-bg-color="categoria.color.producto.bg"
+          ng-repeat="producto in categoria.productos"
+          ng-click="modificar(categoria, producto)"
+          navigable-leaf="producto {{producto.name}}"
+          ng-class="{disable: producto.disable}"
+          ng-show="!producto.removed"+
+          navigable-on-active="selected.producto = producto"
+          navigable-leaf-active="producto == selected.producto"
+          navigable-pull-out="producto.hidden || producto.removed"
+          href >
+          <div class="selected-container">
+            <div class="selected"
+              data-bg-color="categoria.color.producto.selected">
+            </div>
+          </div>
+          <div class="selectable-text">
+            {{producto.name}}
+          </div>
+        </a>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>

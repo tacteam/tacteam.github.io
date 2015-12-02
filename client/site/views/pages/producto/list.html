@@ -1,0 +1,73 @@
+<div navigable-vertical="producto list">
+  <div class="producto-header"
+    navigable-horizontal="producto header"
+    navigable-defaults="{'default':'first'}"
+    navigable-priority="0">
+    <input class="producto-filter"
+      navigable-leaf="producto create input"
+      navigable-priority="0"
+      navigable-leaf-active="true"
+      open-editor="tac.keyboard"
+      placeholder="nombre"
+      ng-model="criteria.text"
+      ng-change="filter()"
+    />
+    <a class="producto-header-button selectable-label"
+      ng-click="ordenar_por_nombre()" 
+      navigable-leaf="producto order-by name"
+      navigable-priority="1"
+      href >
+      <div class="selected-container">
+        <div class="selected">
+        </div>
+      </div>
+      <div class="selectable-text">
+        Ordenar por nombre
+      </div>
+    </a>
+    <a class="producto-header-button selectable-label"
+      ng-click="ordenar_por_categoria()" 
+      navigable-leaf="producto order-by category"
+      navigable-priority="2"
+      href >
+      <div class="selected-container">
+        <div class="selected">
+        </div>
+      </div>
+      <div class="selectable-text">
+        Ordenar por etiqueta
+      </div>
+    </a>
+  </div>
+  <div class="producto-screen">
+    <div class="producto-viewport"
+      navigable-scroll-frame="productos-panel"
+      navigable-multiline="productos"
+      navigable-priority="1"
+      navigable-per-row="4">
+      <a class="producto selectable-label static"
+        ng-repeat="container in containers"
+        data-text-color="container.categoria.color.producto.text"
+        data-bg-color="container.categoria.color.producto.bg"
+        navigable-leaf="producto {{container.producto.name}}"
+        navigable-scroll-from="productos-panel"
+        navigable-on-active="selected.producto = container.producto"
+        navigable-leaf-active="container.producto == selected.producto"
+        ng-class="{disable: container.producto.disable}"
+        ng-show="!container.producto.hidden"
+        navigable-pull-out="container.producto.hidden"
+        ng-click="modificar(container)"
+        href >
+        <div class="selected-container">
+          <div class="selected"
+            data-bg-color="container.categoria.color.producto.selected">
+          </div>
+        </div>
+        <div class="selectable-text">
+          {{container.producto.name}}{{container.cateoria.color}}
+        </div>
+      </a>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>

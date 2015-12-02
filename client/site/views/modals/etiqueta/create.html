@@ -1,0 +1,25 @@
+<div navigable-root="create producto modal">
+  <div navigable-vertical="create producto main">
+    <div class="modal-header"
+      navigable-horizontal="create producto header"
+      navigable-priority="0">
+      <button type="button"
+        navigable-leaf="resume modal"
+        navigable-priority="0"
+        ng-click="resume()"
+        class="close">x</button>
+      <h4 class="modal-title">Crear producto en {{container.etiqueta.name}}</h4>
+    </div>
+    
+    <div class="modal-body" 
+      navigable-horizontal="create producto body"
+      navigable-priority="1">
+      <div class="create-producto-frame" navigable-horizontal="producto-form" >
+        Nombre del producto
+        <input navigable-leaf="producto-input" open-editor="tac.keyboard" class="producto-name"/>
+      </div>
+    </div>
+    
+    <div class="modal-footer"></div>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+<div>
+  <div navigable-vertical="create producto main">
+    <div class="modal-header"
+      
+      data-bg-color="container.color.etiqueta.bg"
+      navigable-horizontal="create producto header"
+      navigable-priority="0">
+      <button type="button"
+        navigable-leaf="resume modal button"
+        navigable-priority="0"
+        ng-click="resume()"
+        data-text-color="container.color.etiqueta.text"
+        class="close">x</button>
+      <h4 class="modal-title"
+        data-text-color="container.color.etiqueta.text">
+        Crear producto en {{container.etiqueta.name}}
+      </h4>
+    </div>
+    
+    <div class="modal-body" 
+      navigable-horizontal="create producto body"
+      navigable-priority="1">
+      <div class="create-producto-frame" navigable-horizontal="producto-form" >
+        <div class="producto-label">
+          Nombre del producto
+        </div>
+        <input class="producto-input"
+          navigable-leaf="producto create input"
+          navigable-priority="0"
+          navigable-leaf-active="true"
+          open-editor="tac.keyboard"
+          placeholder="nombre"
+          ng-model="producto.name"
+          />
+        <a class="producto-create selectable-label"
+          navigable-leaf="producto create confirm button" 
+          navigable-priority="1"
+          ng-click="create()"
+          data-bg-color="container.color.producto.bg"
+          data-text-color="container.color.producto.text"
+          href>
+          <div class="selected-container">
+            <div class="selected"
+              data-bg-color="container.color.producto.selected">
+            </div>
+          </div>
+          <div class="selectable-text">
+            Crear
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <div class="modal-footer"></div>
+  </div>
+</div>

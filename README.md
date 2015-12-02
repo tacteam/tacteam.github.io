@@ -1,4 +1,4 @@
-# TAC-team bolerplate
+# tac-team bolerplate
 
 ## Install
 
@@ -14,6 +14,6 @@ node server.js
 
 deploy server on [http://localhost:3333](http://localhost:3333)
 
-### Documentation
+### Documentation (spanish only)
 
 view [documentation.es](documentation.es.md)

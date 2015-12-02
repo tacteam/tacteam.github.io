@@ -1,44 +1,37 @@
 {
-  "name": "tac-boilerplate",
-  "version": "0.0.1",
-  "authors": [
-    "tacteam <tacteamunq@gmail.com>"
-  ],
-  "description": "repository for components testing",
-  "main": "index.html",
-  "keywords": [
-    "tacteam",
-    "angular",
-    "boilerplate"
-  ],
-  "dependencies": {
-    "angular": "1.4.7",
-    "angular-bootstrap": "0.13.4",
-    "angular-cookies": "1.4.7",
-    "angular-route": "1.4.7",
-    "bootstrap": "3.3.5",
-    "bxslider-4": "4.2.5",
-    "components-font-awesome": "4.4.0",
-    "modernizr": "2.8.3",
-    "ngStorage": "0.3.0",
-    "jquery": "2.1.4",
-    "tac-keys": "~0.0.1",
-    "tac-navigable": "~0.0.1",
-    "tac-keyboard": "~0.0.1",
-    "tac-look-svg": "~0.0.1",
-    "underscore": "1.8.3",
-    "tac-history": "~0.0.1"
-  },
-  "resolutions": {
-    "angular": "1.4.7",
-    "angular-cookies": "1.4.7"
-  },
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+	"name": "shoppinglist",
+	"version": "0.0.1",
+	"authors": [
+		"tacteam <tacteamunq@gmail.com>"
+	],
+	"description": "repository for tac components testing",
+	"main": "index.html",
+	"keywords": [
+		"tacteam",
+		"angular",
+		"boilerplate"
+	],
+	"dependencies": {
+		"angular": "1.4.7",
+		"angular-bootstrap": "0.13.4",
+		"angular-cookies": "1.4.7",
+		"angular-route": "1.4.7",
+		"bootstrap": "3.3.5",
+		"bxslider-4": "4.2.5",
+		"components-font-awesome": "4.4.0",
+		"jquery": "2.1.4",
+		"modernizr": "2.8.3",
+		"ngStorage": "0.3.0",
+		"underscore": "1.8.3",
+		"tac-keys": "0.1.0",
+		"tac-navigable": "0.1.0",
+		"tac-history": "0.1.0",
+		"tac-keyboard": "0.1.0",
+		"tac-look-svg": "0.1.0"
+	},
+	"resolutions": {
+		"angular": "1.4.7",
+		"angular-cookies": "1.4.7"
+	},
+	"license": "MIT"
 }

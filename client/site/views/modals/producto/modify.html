@@ -1,0 +1,115 @@
+<div>
+  <div navigable-vertical="create producto main">
+    <div class="modal-header"
+      
+      data-bg-color="container.categoria.color.etiqueta.bg"
+      navigable-horizontal="create producto header"
+      navigable-priority="0">
+      <button type="button"
+        navigable-leaf="resume modal button"
+        navigable-priority="0"
+        ng-click="resume()"
+        data-text-color="container.categoria.color.etiqueta.text"
+        class="close">x</button>
+      <h4 class="modal-title"
+        data-text-color="container.categoria.color.etiqueta.text">
+        Modificar producto
+      </h4>
+    </div>
+    
+    <div class="modal-body" 
+      navigable-horizontal="create producto body"
+      navigable-priority="1">
+      <div class="modify-producto-frame" 
+        navigable-horizontal="producto-form"
+        navigable-priority="1"
+        >
+        <input class="producto-input"
+          navigable-leaf="producto modify input"
+          navigable-priority="0"
+          navigable-leaf-active="true"
+          open-editor="tac.keyboard"
+          placeholder="nombre"
+          ng-model="producto.name"
+        />
+        <a class="producto-enable selectable-label"
+          ng-class="{'producto-disable': producto.disable}"
+          navigable-leaf="producto modify disable button" 
+          navigable-priority="1"
+          ng-click="producto.disable = !producto.disable"
+          data-text-color="container.categoria.color.producto.text"
+          data-bg-color="container.categoria.color.producto.bg"
+          href>
+          <div class="selected-container">
+            <div class="selected"
+              data-bg-color="container.categoria.color.producto.selected">
+            </div>
+          </div>
+          <div ng-show="producto.disable" class="selectable-text">
+            Habilitar
+          </div>
+          <div ng-hide="producto.disable" class="selectable-text">
+            Deshabilitar
+          </div>
+        </a>
+        <div class="categorias-selector"
+          navigable-vertical="categorias" 
+          navigable-scroll-frame="categorias-modal"
+          navigable-priority="2">
+          <a class="categoria-option selectable-label static"
+            ng-repeat="categoria in container.categorias"
+            navigable-scroll-from="categorias-modal"
+            navigable-current="categoria == container.categoria"
+            data-text-color="categoria.color.etiqueta.text"
+            data-bg-color="categoria.color.etiqueta.bg"
+            navigable-leaf="etiqueta name {{categoria.etiqueta.name}}"
+            navigable-on-active="container.categoria = categoria"
+            href >
+            <div class="selected-container">
+              <div class="selected" data-bg-color="categoria.color.etiqueta.selected">
+              </div>
+            </div>
+            <div class="selectable-text etiqueta-text">
+              <i ng-if="$first" class="pull-rigth fa fa-long-arrow-down"></i> 
+              <i ng-if="$middle" class="pull-rigth fa fa-arrows-v"></i> 
+              <i ng-if="$last" class="pull-rigth fa fa-long-arrow-up"></i> 
+              {{categoria.etiqueta.name}}
+            </div>
+          </a>
+          <div class="clearfix"></div>
+        </div>
+        <a class="producto-guardar selectable-label"
+          navigable-leaf="producto modify save button" 
+          navigable-priority="3"
+          ng-click="modify()"
+          href>
+          <div class="selected-container">
+            <div class="selected"
+              data-bg-color="container.color.producto.selected">
+            </div>
+          </div>
+          <div class="selectable-text">
+            Guardar
+          </div>
+        </a>
+        <a class="producto-borrar selectable-label"
+          navigable-leaf="producto modify remove button" 
+          navigable-priority="4"
+          ng-click="remove()"
+          href>
+          <div class="selected-container">
+            <div class="selected"
+              data-bg-color="container.color.producto.selected">
+            </div>
+          </div>
+          <div class="selectable-text">
+            Borrar
+          </div>
+        </a>
+        
+      </div>
+    </div>
+    
+    <div class="modal-footer"></div>
+  </div>
+</div>

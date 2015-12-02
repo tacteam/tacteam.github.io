@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    
+  <head>
+    <title>Shopping list</title>
+    <meta charset="ISO-8859-1">
+    
+    <!-- Always make sure to check the robots tag -->
+    <meta name="robots" content="index, nofollow">
+    <meta name="description" content="The description of your website">
+    <meta name="keywords" content="the, website, keywords">
+
+    <!-- Essential viewport settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+    
+    
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bxslider-4/dist/jquery.bxslider.css">
+    <link rel="stylesheet" href="bower_components/tac-keyboard/dist/keyboard.css">
+    <link rel="stylesheet" href="site/styles/local.css">
+    
+  </head>
+  <body ng-app="application" navigable-root="shoppinglist">
+    
+    <div ng-controller="main" navigable-vertical="main">
+      <div
+        navigable-horizontal="header"
+        ng-controller="frame.header"
+        ng-include="'site/views/frames/header.html'">
+      </div>
+      
+      <div ng-view ></div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bxslider-4/dist/jquery.bxslider.js"></script>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <script src="bower_components/ngStorage/src/angularLocalStorage.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    
+    <script src="bower_components/tac-history/dist/history.js"></script>
+    <script src="bower_components/tac-keys/dist/keys.js"></script>
+    <script src="bower_components/tac-navigable/dist/navigable.js"></script>
+    <script src="bower_components/tac-keyboard/dist/keyboard.js"></script>
+    <script src="bower_components/tac-look-svg/dist/svg.js"></script>
+    
+    <script src="site/scripts/dependencies.js"></script>
+    <script src="site/scripts/environment/package.js"></script>
+    <script src="site/scripts/application.js"></script>
+    <script src="site/scripts/routes.js"></script>
+        
+    <script src="site/scripts/styles/general.js"></script> 
+        
+    <script src="site/scripts/services/common.js"></script>
+    
+    <script src="site/scripts/services/producto.js"></script>
+    <script src="site/scripts/services/color.js"></script>
+    <script src="site/scripts/services/etiqueta.js"></script> 
+    <script src="site/scripts/views/main.js"></script>
+    
+    <script src="site/scripts/views/pages/home.js"></script>
+    
+    <script src="site/scripts/views/pages/abstract/editor.js"></script>
+    
+    <script src="site/scripts/views/pages/producto/list.js"></script>
+    <script src="site/scripts/views/pages/etiqueta/list.js"></script>
+    
+    <script src="site/scripts/views/frames/header.js"></script>
+    
+    <script src="site/scripts/views/modals/producto/create.js"></script>
+    <script src="site/scripts/views/modals/producto/modify.js"></script>
+    <script src="site/scripts/views/modals/etiqueta/create.js"></script>
+  </body>
+</html>
