@@ -13,6 +13,11 @@
 
 ## Introducción
 
+Este repositorio tiene como objetivo servir de ejemplo de las funcionalidades provistas por los compoenentes TAC.    
+Así mismo puede ser utilizado como base para nuevos proyectos.
+
+### Angular.js
+
 El dispositivo TAC está diseñado para ejecutar aplicaciones HTML5.
 Para facilitar la tarea de desarrollo de aplicaciones, el equipo de tienda TAC utiliza un framework javascript client-side desarrollado por Google llamado AngularJs.
 
@@ -56,15 +61,18 @@ Existen varios métodos para 'servir' nuestro proyecto.
 
 Ya que varias tecnologías utilizadas en este entorno, como Bower, se basan en [Node.js](https://docs.npmjs.com/getting-started/installing-node), utilizaremos esta opción para servir nuestro sitio.
 
+El archivo `server.js` es una aplicacion express que sirve como contenido estatico el contenido del directorio `client`.
+
+*npm* utiliza la información existente en el archivo `package.json` para descargar las dependencias del proyecto, en este caso solo conseguirá el paquete `express`.
+
 ```shell
-npm init #crea el archivo 'package.json'
-npm install express --save #descarga express y lo agrega como dependencia
+npm update
 ```
 
-Copiar el archivo `server.js` de este proyecto.
+*Node* es el interprete Javascript server-side que ejecutara al aplicación.
 
 ```shell
-node server.js #ejecuta el servidor
+node server.js 
 ```
 
 Cualquier browser de nuestro equipo mostrará nuestro sitio en la url [http://localhost:3333](http://localhost:3333).
@@ -90,7 +98,7 @@ Para solucionar este problema se desarolló el componente 'tac.history' que agre
 
 Si bien cada TAC soportará el uso de diferetes interfaces: Teclado, *mouse* e incluso una aplicación *mobile*. Estas constituirán extensiones al método común:    
 El control remoto.   
-Las aplicaciones TAC podrán interactuar a travez de  eventos de teclado.   
+Las aplicaciones TAC podrán interactuar a travez de eventos de teclado.   
 Para simplificar la administracion de los eventos, el equipo TAC desarrolló el componente **tac.keys**.    
 **tac.keys** administra los eventos de teclado emitidos por el browser, convirtiéndolos en acciones sobre todo aquel que se subscriba al servicio proporcionado.
 
