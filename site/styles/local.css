@@ -4542,6 +4542,20 @@ body {
   color: #FFFFFE;
   font-size: 30px;
 }
+.home .description .sub-description{
+  margin-top: 20px;
+  color: #FFFFFE;
+  font-size: 20px;
+}
+.home .description .developers{
+  margin-top: 20px;
+  font-size: 20px;
+  color: #FFFFFE;
+}
+.home .description .address{
+  font-size: 20px;
+  color: #482647;
+}
 
 /* line 21, ../../../client/site/styles/local/scss/modules/_general.scss */
 .etiqueta-screen {

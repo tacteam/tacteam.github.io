@@ -1,19 +1,7 @@
-# tac-team bolerplate
+# tac-team boilerplate
 
-## Install
+Application to show tac-components online.
 
-git clone https://github.com/tacteam/boilerplate.git
+Visit site application [https://tacteam.github.io](https://tacteam.github.io)
 
-```shell
-npm update
-
-bower update
-
-node server.js
-```
-
-deploy server on [http://localhost:3333](http://localhost:3333)
-
-### Documentation (spanish only)
-
-view [documentation.es](documentation.es.md)
+Documentation [https://github.com/tacteam](https://github.com/tacteam)
