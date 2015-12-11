@@ -1,0 +1,29 @@
+{
+  "name": "tac-look-svg",
+  "version": "0.1.0",
+  "authors": [
+    "tacteam <tacteamunq@gmail.com>"
+  ],
+  "description": "angular directive to load svg content dynamically",
+  "main": "dist/svg.js",
+  "keywords": [
+    "angular",
+    "directive",
+    "tacteam",
+    "dynamically",
+    "svg",
+    "design",
+    "html5"
+  ],
+  "license": "MIT",
+  "homepage": "tiendatac.minplan.gob.ar",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "07aa3d0cce53de61ae8537b3bdeb756f2214e84c"
+  },
+  "_source": "git://github.com/tacteam/look-svg.git",
+  "_target": "0.1.0",
+  "_originalSource": "tac-look-svg"
+}

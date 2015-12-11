@@ -1,0 +1,27 @@
+{
+  "name": "tac-history",
+  "version": "0.1.0",
+  "authors": [
+    "tacteam <tacteamunq@gmail.com>"
+  ],
+  "description": "angular component to manager browser history",
+  "main": "dist/history.js",
+  "keywords": [
+    "angular",
+    "tacteam",
+    "history",
+    "location",
+    "redirect"
+  ],
+  "license": "MIT",
+  "homepage": "tiendatac.minplan.gob.ar",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "3b1cf2f5589d0d4bf36d95ab0d854be32cb4eb72"
+  },
+  "_source": "git://github.com/tacteam/history.git",
+  "_target": "0.1.0",
+  "_originalSource": "tac-history"
+}

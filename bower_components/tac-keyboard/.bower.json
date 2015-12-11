@@ -1,0 +1,29 @@
+{
+  "name": "tac-keyboard",
+  "version": "0.1.0",
+  "authors": [
+    "tacteam <tacteamunq@gmail.com>"
+  ],
+  "description": "angular keyboard navigation components",
+  "main": "dist/keyboard.js",
+  "keywords": [
+    "angular",
+    "keyboard",
+    "tacteam",
+    "navigation",
+    "keys",
+    "control",
+    "html5"
+  ],
+  "license": "MIT",
+  "homepage": "tiendatac.minplan.gob.ar",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "375f227c41bbadcb434fad7cfd51b387f9188170"
+  },
+  "_source": "git://github.com/tacteam/keyboard.git",
+  "_target": "0.1.0",
+  "_originalSource": "tac-keyboard"
+}

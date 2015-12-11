@@ -1,0 +1,29 @@
+{
+  "name": "tac-keys",
+  "version": "0.1.0",
+  "authors": [
+    "tacteam <tacteamunq@gmail.com>"
+  ],
+  "description": "component to manage keyboard and remote-control events",
+  "main": "dist/keys.js",
+  "keywords": [
+    "angular",
+    "keyboard",
+    "tacteam",
+    "navigation",
+    "keys",
+    "control",
+    "html5"
+  ],
+  "license": "MIT",
+  "homepage": "tiendatac.minplan.gob.ar",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "cb2c3a2aad50d9586d566e362bcdbf2ace56bb74"
+  },
+  "_source": "git://github.com/tacteam/keys.git",
+  "_target": "0.1.0",
+  "_originalSource": "tac-keys"
+}
